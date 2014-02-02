@@ -3159,3 +3159,1977 @@ Started GET "/assets/superman.jpg" for 127.0.0.1 at 2014-01-25 10:44:44 -0600
 
 
 Started GET "/assets/batman.jpg" for 127.0.0.1 at 2014-01-25 10:44:44 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2014-01-28 09:49:22 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies" WHERE (released_on <= '2014-01-28 15:49:22.409595') ORDER BY released_on desc
+  Rendered movies/index.html.erb within layouts/application (49.8ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_sidebar.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 177ms (Views: 148.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2014-01-28 09:49:22 -0600
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2014-01-28 09:49:22 -0600
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-01-28 09:49:22 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-28 09:49:22 -0600
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2014-01-28 09:49:22 -0600
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2014-01-28 09:49:22 -0600
+
+
+Started GET "/assets/elements.css?body=1" for 127.0.0.1 at 2014-01-28 09:49:22 -0600
+
+
+Started GET "/assets/buttons.css?body=1" for 127.0.0.1 at 2014-01-28 09:49:22 -0600
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2014-01-28 09:49:22 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-28 09:49:22 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-28 09:49:22 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-01-28 09:49:22 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-28 09:49:22 -0600
+
+
+Started GET "/assets/ironman.jpg" for 127.0.0.1 at 2014-01-28 09:49:22 -0600
+
+
+Started GET "/assets/spiderman.jpg" for 127.0.0.1 at 2014-01-28 09:49:22 -0600
+
+
+Started GET "/assets/superman.jpg" for 127.0.0.1 at 2014-01-28 09:49:22 -0600
+
+
+Started GET "/assets/catwoman.jpg" for 127.0.0.1 at 2014-01-28 09:49:22 -0600
+
+
+Started GET "/assets/batman.jpg" for 127.0.0.1 at 2014-01-28 09:49:22 -0600
+
+
+Started GET "/assets/background.jpg" for 127.0.0.1 at 2014-01-28 09:49:22 -0600
+
+
+Started GET "/assets/add.png" for 127.0.0.1 at 2014-01-28 09:49:22 -0600
+
+
+Started GET "/assets/arrow.png" for 127.0.0.1 at 2014-01-28 09:49:22 -0600
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2014-01-28 09:49:22 -0600
+
+
+Started GET "/movies/1" for 127.0.0.1 at 2014-01-28 09:49:25 -0600
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered movies/show.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_sidebar.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 19ms (Views: 16.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/ironman.jpg" for 127.0.0.1 at 2014-01-28 09:49:25 -0600
+
+
+Started GET "/movies/1/reviews" for 127.0.0.1 at 2014-01-28 09:49:28 -0600
+Processing by ReviewsController#index as HTML
+  Parameters: {"movie_id"=>"1"}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mReview Load (0.7ms)[0m  [1mSELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 1]]
+  Rendered reviews/index.html.erb within layouts/application (47.9ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_sidebar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 80ms (Views: 56.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/movies/1" for 127.0.0.1 at 2014-01-28 09:49:32 -0600
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered movies/show.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_sidebar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 17ms (Views: 14.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/ironman.jpg" for 127.0.0.1 at 2014-01-28 09:49:32 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2014-01-28 09:49:33 -0600
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.4ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE (released_on <= '2014-01-28 15:49:33.190222') ORDER BY released_on desc[0m
+  Rendered movies/index.html.erb within layouts/application (7.5ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_sidebar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 20ms (Views: 18.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/ironman.jpg" for 127.0.0.1 at 2014-01-28 09:49:33 -0600
+
+
+Started GET "/assets/spiderman.jpg" for 127.0.0.1 at 2014-01-28 09:49:33 -0600
+
+
+Started GET "/assets/catwoman.jpg" for 127.0.0.1 at 2014-01-28 09:49:33 -0600
+
+
+Started GET "/movies/5" for 127.0.0.1 at 2014-01-28 09:49:36 -0600
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "5"]]
+  Rendered movies/show.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_sidebar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 15ms (Views: 12.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/catwoman.jpg" for 127.0.0.1 at 2014-01-28 09:49:36 -0600
+
+
+Started GET "/movies/5/reviews" for 127.0.0.1 at 2014-01-28 09:49:39 -0600
+Processing by ReviewsController#index as HTML
+  Parameters: {"movie_id"=>"5"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "5"]]
+  [1m[35mReview Load (0.1ms)[0m  SELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 5]]
+  Rendered reviews/index.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_sidebar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 15ms (Views: 12.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies/5" for 127.0.0.1 at 2014-01-28 09:49:40 -0600
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "5"]]
+  Rendered movies/show.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_sidebar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 15ms (Views: 13.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/catwoman.jpg" for 127.0.0.1 at 2014-01-28 09:49:40 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2014-01-28 09:49:41 -0600
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies" WHERE (released_on <= '2014-01-28 15:49:41.705766') ORDER BY released_on desc
+  Rendered movies/index.html.erb within layouts/application (5.6ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_sidebar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 18ms (Views: 16.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/catwoman.jpg" for 127.0.0.1 at 2014-01-28 09:49:41 -0600
+
+
+Started GET "/assets/ironman.jpg" for 127.0.0.1 at 2014-01-28 09:49:41 -0600
+
+
+Started GET "/assets/spiderman.jpg" for 127.0.0.1 at 2014-01-28 09:49:41 -0600
+
+
+Started GET "/movies/3" for 127.0.0.1 at 2014-01-28 09:49:43 -0600
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  Rendered movies/show.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_sidebar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 16ms (Views: 13.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/spiderman.jpg" for 127.0.0.1 at 2014-01-28 09:49:43 -0600
+
+
+Started GET "/movies/3/reviews" for 127.0.0.1 at 2014-01-28 09:49:45 -0600
+Processing by ReviewsController#index as HTML
+  Parameters: {"movie_id"=>"3"}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "3"]]
+  [1m[36mReview Load (0.1ms)[0m  [1mSELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 3]]
+  Rendered reviews/index.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_sidebar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 16ms (Views: 13.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies/3" for 127.0.0.1 at 2014-01-28 09:49:46 -0600
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "3"]]
+  Rendered movies/show.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_sidebar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 15ms (Views: 13.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/spiderman.jpg" for 127.0.0.1 at 2014-01-28 09:49:46 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2014-01-28 09:49:47 -0600
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE (released_on <= '2014-01-28 15:49:47.027513') ORDER BY released_on desc[0m
+  Rendered movies/index.html.erb within layouts/application (5.6ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 18ms (Views: 16.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/catwoman.jpg" for 127.0.0.1 at 2014-01-28 09:49:47 -0600
+
+
+Started GET "/assets/ironman.jpg" for 127.0.0.1 at 2014-01-28 09:49:47 -0600
+
+
+Started GET "/assets/spiderman.jpg" for 127.0.0.1 at 2014-01-28 09:49:47 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2014-01-28 15:02:40 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.6ms)[0m  SELECT "movies".* FROM "movies" WHERE (released_on <= '2014-01-28 21:02:40.773700') ORDER BY released_on desc
+  Rendered movies/index.html.erb within layouts/application (49.0ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_sidebar.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 175ms (Views: 146.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-01-28 15:02:40 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-28 15:02:41 -0600
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2014-01-28 15:02:41 -0600
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2014-01-28 15:02:41 -0600
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2014-01-28 15:02:41 -0600
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2014-01-28 15:02:41 -0600
+
+
+Started GET "/assets/elements.css?body=1" for 127.0.0.1 at 2014-01-28 15:02:41 -0600
+
+
+Started GET "/assets/buttons.css?body=1" for 127.0.0.1 at 2014-01-28 15:02:41 -0600
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2014-01-28 15:02:41 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-28 15:02:41 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-28 15:02:41 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-01-28 15:02:41 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-28 15:02:41 -0600
+
+
+Started GET "/assets/ironman.jpg" for 127.0.0.1 at 2014-01-28 15:02:41 -0600
+
+
+Started GET "/assets/batman.jpg" for 127.0.0.1 at 2014-01-28 15:02:41 -0600
+
+
+Started GET "/assets/spiderman.jpg" for 127.0.0.1 at 2014-01-28 15:02:41 -0600
+
+
+Started GET "/assets/superman.jpg" for 127.0.0.1 at 2014-01-28 15:02:41 -0600
+
+
+Started GET "/assets/catwoman.jpg" for 127.0.0.1 at 2014-01-28 15:02:41 -0600
+
+
+Started GET "/assets/background.jpg" for 127.0.0.1 at 2014-01-28 15:02:41 -0600
+
+
+Started GET "/assets/arrow.png" for 127.0.0.1 at 2014-01-28 15:02:41 -0600
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2014-01-28 15:02:41 -0600
+
+
+Started GET "/assets/add.png" for 127.0.0.1 at 2014-01-28 15:02:41 -0600
+
+
+Started GET "/movies/1" for 127.0.0.1 at 2014-01-28 15:02:42 -0600
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.4ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered movies/show.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_sidebar.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 23ms (Views: 19.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/ironman.jpg" for 127.0.0.1 at 2014-01-28 15:02:42 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2014-01-28 15:02:43 -0600
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies" WHERE (released_on <= '2014-01-28 21:02:43.529932') ORDER BY released_on desc
+  Rendered movies/index.html.erb within layouts/application (9.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_sidebar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 21ms (Views: 19.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/ironman.jpg" for 127.0.0.1 at 2014-01-28 15:02:43 -0600
+
+
+Started GET "/assets/spiderman.jpg" for 127.0.0.1 at 2014-01-28 15:02:43 -0600
+
+
+Started GET "/assets/catwoman.jpg" for 127.0.0.1 at 2014-01-28 15:02:43 -0600
+
+
+Started GET "/movies/5" for 127.0.0.1 at 2014-01-28 15:02:44 -0600
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "5"]]
+  Rendered movies/show.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_sidebar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 15ms (Views: 13.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/catwoman.jpg" for 127.0.0.1 at 2014-01-28 15:02:44 -0600
+
+
+Started GET "/movies/5/reviews" for 127.0.0.1 at 2014-01-28 15:02:45 -0600
+Processing by ReviewsController#index as HTML
+  Parameters: {"movie_id"=>"5"}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "5"]]
+  [1m[36mReview Load (0.5ms)[0m  [1mSELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 5]]
+  Rendered reviews/index.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_sidebar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 67ms (Views: 11.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-01-30 14:59:45 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.7ms)[0m  SELECT "movies".* FROM "movies" WHERE (released_on <= '2014-01-30 20:59:45.293760') ORDER BY released_on desc
+  Rendered movies/index.html.erb within layouts/application (57.8ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_sidebar.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 200ms (Views: 168.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-30 14:59:45 -0600
+
+
+Started GET "/assets/buttons.css?body=1" for 127.0.0.1 at 2014-01-30 14:59:45 -0600
+
+
+Started GET "/assets/elements.css?body=1" for 127.0.0.1 at 2014-01-30 14:59:45 -0600
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2014-01-30 14:59:45 -0600
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-01-30 14:59:45 -0600
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2014-01-30 14:59:45 -0600
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2014-01-30 14:59:45 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-30 14:59:45 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-30 14:59:45 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-01-30 14:59:45 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-30 14:59:45 -0600
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2014-01-30 14:59:45 -0600
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2014-01-30 14:59:45 -0600
+
+
+Started GET "/assets/ironman.jpg" for 127.0.0.1 at 2014-01-30 14:59:45 -0600
+
+
+Started GET "/assets/catwoman.jpg" for 127.0.0.1 at 2014-01-30 14:59:45 -0600
+
+
+Started GET "/assets/superman.jpg" for 127.0.0.1 at 2014-01-30 14:59:45 -0600
+
+
+Started GET "/assets/spiderman.jpg" for 127.0.0.1 at 2014-01-30 14:59:45 -0600
+
+
+Started GET "/assets/batman.jpg" for 127.0.0.1 at 2014-01-30 14:59:45 -0600
+
+
+Started GET "/movies/1" for 127.0.0.1 at 2014-01-30 14:59:46 -0600
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered movies/show.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_sidebar.html.erb (1.2ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 25ms (Views: 21.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/ironman.jpg" for 127.0.0.1 at 2014-01-30 14:59:46 -0600
+
+
+Started GET "/movies/1/reviews" for 127.0.0.1 at 2014-01-30 14:59:49 -0600
+Processing by ReviewsController#index as HTML
+  Parameters: {"movie_id"=>"1"}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mReview Load (0.8ms)[0m  [1mSELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 1]]
+  Rendered reviews/index.html.erb within layouts/application (55.4ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_sidebar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 91ms (Views: 65.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/rails/info/routes" for 127.0.0.1 at 2014-01-30 15:02:34 -0600
+Processing by Rails::InfoController#routes as HTML
+  Rendered /Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.4ms)
+  Rendered /Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.0ms)
+  Rendered /Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/railties-4.0.0/lib/rails/templates/rails/info/routes.html.erb within layouts/application (16.4ms)
+Completed 200 OK in 24ms (Views: 22.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ironman.jpg" for 127.0.0.1 at 2014-01-30 15:03:03 -0600
+
+
+Started GET "/movies/1" for 127.0.0.1 at 2014-01-30 15:03:25 -0600
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "1"]]
+ERROR: compiling _app_views_movies_show_html_erb___2637217955609886548_2159439340 RAISED /Users/wavrin/Code/rails/rails_studio/flix/app/views/movies/show.html.erb:35: syntax error, unexpected '<', expecting ')'
+    <nav>
+     ^
+/Users/wavrin/Code/rails/rails_studio/flix/app/views/movies/show.html.erb:44: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/wavrin/Code/rails/rails_studio/flix/app/views/movies/show.html.erb:46: syntax error, unexpected keyword_end, expecting ')'
+Function body:           def _app_views_movies_show_html_erb___2637217955609886548_2159439340(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "movies/show";_old_output_buffer = @output_buffer;;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.safe_append='<article id="movie" class="movie">
+  <header>
+    ';@output_buffer.append=( image_for(@movie) );@output_buffer.safe_append='
+    <h1>';@output_buffer.append=( @movie.title );@output_buffer.safe_append='</h1>
+    <h2>Released: ';@output_buffer.append=( @movie.released_on );@output_buffer.safe_append='</h2>
+  </header>
+
+  <p>
+    ';@output_buffer.append=( @movie.description );@output_buffer.safe_append='
+  </p>
+  
+  <h3 class="no-rule">
+    ';@output_buffer.append=( @movie.rating );@output_buffer.safe_append=' &bull; ';@output_buffer.append=( @movie.duration );@output_buffer.safe_append=' 
+';@output_buffer.safe_append='  </h3>
+  
+  <h3>Cast</h3>
+  <p>
+    ';@output_buffer.append=( @movie.cast );@output_buffer.safe_append='
+  </p>
+  
+  <h3>Director</h3>
+  <p>
+    ';@output_buffer.append=( @movie.director );@output_buffer.safe_append='
+  </p>
+  
+  <h3>Total Gross</h3>
+  <p>
+    ';@output_buffer.append=( format_total_gross(@movie) );@output_buffer.safe_append='
+  </p>
+  
+    ';@output_buffer.append=( link_to "Reviews", new_movie_review_path(@movie) );@output_buffer.safe_append='
+
+  <footer>
+    ';@output_buffer.append=( link_to "Write Review", create_review_path(@movie)
+    <nav>
+      <%= link_to 'Edit', edit_movie_path(@movie), class: 'button' );@output_buffer.safe_append='
+      ';@output_buffer.append=( link_to 'Delete', @movie, 
+                  class: 'button',
+                  method: :delete, data: { confirm: 'Are you sure?' } );@output_buffer.safe_append='
+    </nav>
+  </footer>
+</article>
+';@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_view/template.rb:299:in `module_eval'
+/Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_view/template.rb:299:in `compile'
+/Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_view/template.rb:248:in `block in compile!'
+/Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_view/template.rb:236:in `synchronize'
+/Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_view/template.rb:236:in `compile!'
+/Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_view/template.rb:142:in `block in render'
+/Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/activesupport-4.0.0/lib/active_support/notifications.rb:161:in `instrument'
+/Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_view/template.rb:141:in `render'
+/Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:49:in `block (2 levels) in render_template'
+/Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/activesupport-4.0.0/lib/active_support/notifications.rb:159:in `block in instrument'
+/Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/activesupport-4.0.0/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/activesupport-4.0.0/lib/active_support/notifications.rb:159:in `instrument'
+/Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:48:in `block in render_template'
+/Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:56:in `render_with_layout'
+/Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+/Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:17:in `render'
+/Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_view/renderer/renderer.rb:42:in `render_template'
+/Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_view/renderer/renderer.rb:23:in `render'
+/Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/abstract_controller/rendering.rb:127:in `_render_template'
+/Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_controller/metal/streaming.rb:219:in `_render_template'
+/Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/abstract_controller/rendering.rb:120:in `render_to_body'
+/Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+/Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+/Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/abstract_controller/rendering.rb:97:in `render'
+/Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_controller/metal/rendering.rb:16:in `render'
+/Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+/Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/activesupport-4.0.0/lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+/Users/wavrin/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+/Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/activesupport-4.0.0/lib/active_support/core_ext/benchmark.rb:12:in `ms'
+/Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+/Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+/Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/activerecord-4.0.0/lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+/Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/abstract_controller/base.rb:189:in `process_action'
+/Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/activesupport-4.0.0/lib/active_support/callbacks.rb:403:in `_run__2482315940135589211__process_action__callbacks'
+/Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/activesupport-4.0.0/lib/active_support/callbacks.rb:80:in `run_callbacks'
+/Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+/Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/activesupport-4.0.0/lib/active_support/notifications.rb:159:in `block in instrument'
+/Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/activesupport-4.0.0/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/activesupport-4.0.0/lib/active_support/notifications.rb:159:in `instrument'
+/Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+/Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+/Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/activerecord-4.0.0/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/abstract_controller/base.rb:136:in `process'
+/Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/abstract_controller/rendering.rb:44:in `process'
+/Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_controller/metal.rb:195:in `dispatch'
+/Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+/Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_controller/metal.rb:231:in `block in action'
+/Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/routing/route_set.rb:80:in `call'
+/Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+/Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/routing/route_set.rb:48:in `call'
+/Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/journey/router.rb:71:in `block in call'
+/Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/journey/router.rb:59:in `each'
+/Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/journey/router.rb:59:in `call'
+/Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/routing/route_set.rb:655:in `call'
+/Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/rack-1.5.2/lib/rack/etag.rb:23:in `call'
+/Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/rack-1.5.2/lib/rack/conditionalget.rb:25:in `call'
+/Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
+/Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+/Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/flash.rb:241:in `call'
+/Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:225:in `context'
+/Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:220:in `call'
+/Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/cookies.rb:486:in `call'
+/Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/activerecord-4.0.0/lib/active_record/query_cache.rb:36:in `call'
+/Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/activerecord-4.0.0/lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+/Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/activerecord-4.0.0/lib/active_record/migration.rb:369:in `call'
+/Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+/Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/activesupport-4.0.0/lib/active_support/callbacks.rb:373:in `_run__1421927408692307288__call__callbacks'
+/Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/activesupport-4.0.0/lib/active_support/callbacks.rb:80:in `run_callbacks'
+/Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/reloader.rb:64:in `call'
+/Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+/Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+/Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+/Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/railties-4.0.0/lib/rails/rack/logger.rb:38:in `call_app'
+/Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/railties-4.0.0/lib/rails/rack/logger.rb:21:in `block in call'
+/Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/activesupport-4.0.0/lib/active_support/tagged_logging.rb:67:in `block in tagged'
+/Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/activesupport-4.0.0/lib/active_support/tagged_logging.rb:25:in `tagged'
+/Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/activesupport-4.0.0/lib/active_support/tagged_logging.rb:67:in `tagged'
+/Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/railties-4.0.0/lib/rails/rack/logger.rb:21:in `call'
+/Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+/Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+/Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+/Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/activesupport-4.0.0/lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+/Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+/Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/static.rb:64:in `call'
+/Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/railties-4.0.0/lib/rails/engine.rb:511:in `call'
+/Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/railties-4.0.0/lib/rails/application.rb:97:in `call'
+/Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+/Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/rack-1.5.2/lib/rack/content_length.rb:14:in `call'
+/Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/rack-1.5.2/lib/rack/handler/webrick.rb:60:in `service'
+/Users/wavrin/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+/Users/wavrin/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+/Users/wavrin/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+  Rendered movies/show.html.erb within layouts/application (7.6ms)
+Completed 500 Internal Server Error in 13ms
+
+ActionView::Template::Error (/Users/wavrin/Code/rails/rails_studio/flix/app/views/movies/show.html.erb:35: syntax error, unexpected '<', expecting ')'
+    <nav>
+     ^
+/Users/wavrin/Code/rails/rails_studio/flix/app/views/movies/show.html.erb:44: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/wavrin/Code/rails/rails_studio/flix/app/views/movies/show.html.erb:46: syntax error, unexpected keyword_end, expecting ')'):
+    32: 
+    33:   <footer>
+    34:     <%= link_to "Write Review", create_review_path(@movie)
+    35:     <nav>
+    36:       <%= link_to 'Edit', edit_movie_path(@movie), class: 'button' %>
+    37:       <%= link_to 'Delete', @movie, 
+    38:                   class: 'button',
+  actionpack (4.0.0) lib/action_view/template.rb:299:in `module_eval'
+  actionpack (4.0.0) lib/action_view/template.rb:299:in `compile'
+  actionpack (4.0.0) lib/action_view/template.rb:248:in `block in compile!'
+  actionpack (4.0.0) lib/action_view/template.rb:236:in `synchronize'
+  actionpack (4.0.0) lib/action_view/template.rb:236:in `compile!'
+  actionpack (4.0.0) lib/action_view/template.rb:142:in `block in render'
+  activesupport (4.0.0) lib/active_support/notifications.rb:161:in `instrument'
+  actionpack (4.0.0) lib/action_view/template.rb:141:in `render'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:49:in `block (2 levels) in render_template'
+  actionpack (4.0.0) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.0) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:48:in `block in render_template'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:56:in `render_with_layout'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:17:in `render'
+  actionpack (4.0.0) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionpack (4.0.0) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:127:in `_render_template'
+  actionpack (4.0.0) lib/action_controller/metal/streaming.rb:219:in `_render_template'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:120:in `render_to_body'
+  actionpack (4.0.0) lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+  actionpack (4.0.0) lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:97:in `render'
+  actionpack (4.0.0) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.0.0) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/wavrin/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+  activesupport (4.0.0) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.0.0) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.0.0) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.0.0) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.0.0) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.0) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:403:in `_run__2482315940135589211__process_action__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.0) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.0) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:655:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.0) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__1421927408692307288__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/wavrin/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/wavrin/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/wavrin/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (13.6ms)
+
+
+Started GET "/movies/1" for 127.0.0.1 at 2014-01-30 15:04:09 -0600
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered movies/show.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_sidebar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 16ms (Views: 13.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-30 15:04:09 -0600
+
+
+Started GET "/assets/elements.css?body=1" for 127.0.0.1 at 2014-01-30 15:04:09 -0600
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2014-01-30 15:04:09 -0600
+
+
+Started GET "/assets/buttons.css?body=1" for 127.0.0.1 at 2014-01-30 15:04:09 -0600
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-01-30 15:04:09 -0600
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2014-01-30 15:04:09 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-30 15:04:09 -0600
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2014-01-30 15:04:09 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-30 15:04:09 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-01-30 15:04:09 -0600
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2014-01-30 15:04:09 -0600
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2014-01-30 15:04:09 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-30 15:04:09 -0600
+
+
+Started GET "/assets/ironman.jpg" for 127.0.0.1 at 2014-01-30 15:04:09 -0600
+
+
+Started GET "/movies/1/reviews" for 127.0.0.1 at 2014-01-30 15:04:13 -0600
+Processing by ReviewsController#index as HTML
+  Parameters: {"movie_id"=>"1"}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mReview Load (0.2ms)[0m  [1mSELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 1]]
+  Rendered reviews/index.html.erb within layouts/application (3.4ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_sidebar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 19ms (Views: 16.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/movies/1" for 127.0.0.1 at 2014-01-30 15:04:55 -0600
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered movies/show.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 13ms (Views: 11.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-30 15:04:55 -0600
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2014-01-30 15:04:55 -0600
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2014-01-30 15:04:55 -0600
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-01-30 15:04:55 -0600
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2014-01-30 15:04:55 -0600
+
+
+Started GET "/assets/elements.css?body=1" for 127.0.0.1 at 2014-01-30 15:04:55 -0600
+
+
+Started GET "/assets/buttons.css?body=1" for 127.0.0.1 at 2014-01-30 15:04:55 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-30 15:04:55 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-30 15:04:55 -0600
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2014-01-30 15:04:55 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-01-30 15:04:55 -0600
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2014-01-30 15:04:55 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-30 15:04:55 -0600
+
+
+Started GET "/assets/ironman.jpg" for 127.0.0.1 at 2014-01-30 15:04:55 -0600
+
+
+Started GET "/movies/1/reviews" for 127.0.0.1 at 2014-01-30 15:04:57 -0600
+Processing by ReviewsController#index as HTML
+  Parameters: {"movie_id"=>"1"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mReview Load (0.2ms)[0m  SELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 1]]
+  Rendered reviews/index.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_sidebar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 19ms (Views: 15.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/movies/1/reviews" for 127.0.0.1 at 2014-01-30 15:05:45 -0600
+Processing by ReviewsController#index as HTML
+  Parameters: {"movie_id"=>"1"}
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mReview Load (0.1ms)[0m  SELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 1]]
+  Rendered reviews/index.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_sidebar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 13ms (Views: 11.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-30 15:05:45 -0600
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-01-30 15:05:45 -0600
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2014-01-30 15:05:45 -0600
+
+
+Started GET "/assets/buttons.css?body=1" for 127.0.0.1 at 2014-01-30 15:05:45 -0600
+
+
+Started GET "/assets/elements.css?body=1" for 127.0.0.1 at 2014-01-30 15:05:45 -0600
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2014-01-30 15:05:45 -0600
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2014-01-30 15:05:45 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-30 15:05:45 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-30 15:05:45 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-01-30 15:05:45 -0600
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2014-01-30 15:05:45 -0600
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2014-01-30 15:05:45 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-30 15:05:45 -0600
+
+
+Started GET "/movies/1" for 127.0.0.1 at 2014-01-30 15:05:47 -0600
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered movies/show.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_sidebar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 18ms (Views: 15.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/ironman.jpg" for 127.0.0.1 at 2014-01-30 15:05:47 -0600
+
+
+Started GET "/movies/1/reviews" for 127.0.0.1 at 2014-01-30 15:05:48 -0600
+Processing by ReviewsController#index as HTML
+  Parameters: {"movie_id"=>"1"}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mReview Load (0.2ms)[0m  [1mSELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 1]]
+  Rendered reviews/index.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_sidebar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 19ms (Views: 16.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/movies/1/reviews/new" for 127.0.0.1 at 2014-01-30 15:05:51 -0600
+
+AbstractController::ActionNotFound (The action 'new' could not be found for ReviewsController):
+  actionpack (4.0.0) lib/abstract_controller/base.rb:131:in `process'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:655:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.0) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__1421927408692307288__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/wavrin/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/wavrin/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/wavrin/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.5ms)
+
+
+Started GET "/movies/1/reviews/new" for 127.0.0.1 at 2014-01-30 15:05:51 -0600
+
+AbstractController::ActionNotFound (The action 'new' could not be found for ReviewsController):
+  actionpack (4.0.0) lib/abstract_controller/base.rb:131:in `process'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:655:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.0) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__1421927408692307288__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/wavrin/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/wavrin/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/wavrin/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.6ms)
+
+
+Started GET "/movies/1/reviews" for 127.0.0.1 at 2014-01-30 15:08:27 -0600
+Processing by ReviewsController#index as HTML
+  Parameters: {"movie_id"=>"1"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mReview Load (0.1ms)[0m  [1mSELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 1]]
+  Rendered reviews/index.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_sidebar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 14ms (Views: 11.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-30 15:08:27 -0600
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-01-30 15:08:27 -0600
+
+
+Started GET "/assets/buttons.css?body=1" for 127.0.0.1 at 2014-01-30 15:08:27 -0600
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2014-01-30 15:08:27 -0600
+
+
+Started GET "/assets/elements.css?body=1" for 127.0.0.1 at 2014-01-30 15:08:27 -0600
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2014-01-30 15:08:27 -0600
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2014-01-30 15:08:27 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-30 15:08:27 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-30 15:08:27 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-01-30 15:08:27 -0600
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2014-01-30 15:08:27 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-30 15:08:27 -0600
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2014-01-30 15:08:27 -0600
+
+
+Started GET "/movies/1" for 127.0.0.1 at 2014-01-30 15:08:29 -0600
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered movies/show.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 16ms (Views: 14.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/ironman.jpg" for 127.0.0.1 at 2014-01-30 15:08:29 -0600
+
+
+Started GET "/movies/1/reviews/new" for 127.0.0.1 at 2014-01-30 15:08:31 -0600
+
+AbstractController::ActionNotFound (The action 'new' could not be found for ReviewsController):
+  actionpack (4.0.0) lib/abstract_controller/base.rb:131:in `process'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:655:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.0) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__1421927408692307288__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/wavrin/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/wavrin/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/wavrin/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (1.1ms)
+
+
+Started GET "/movies/1/reviews/new" for 127.0.0.1 at 2014-01-30 15:08:31 -0600
+
+AbstractController::ActionNotFound (The action 'new' could not be found for ReviewsController):
+  actionpack (4.0.0) lib/abstract_controller/base.rb:131:in `process'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:655:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.0) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__1421927408692307288__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/wavrin/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/wavrin/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/wavrin/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.5ms)
+
+
+Started GET "/movies/1/reviews/new" for 127.0.0.1 at 2014-01-30 15:15:27 -0600
+Processing by ReviewsController#new as HTML
+  Parameters: {"movie_id"=>"1"}
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Completed 500 Internal Server Error in 58ms
+
+ActionView::MissingTemplate (Missing template reviews/new, application/new with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/Users/wavrin/Code/rails/rails_studio/flix/app/views"
+):
+  actionpack (4.0.0) lib/action_view/path_set.rb:46:in `find'
+  actionpack (4.0.0) lib/action_view/lookup_context.rb:115:in `find'
+  actionpack (4.0.0) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:35:in `determine_template'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionpack (4.0.0) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionpack (4.0.0) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:127:in `_render_template'
+  actionpack (4.0.0) lib/action_controller/metal/streaming.rb:219:in `_render_template'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:120:in `render_to_body'
+  actionpack (4.0.0) lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+  actionpack (4.0.0) lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:97:in `render'
+  actionpack (4.0.0) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.0.0) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/wavrin/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+  activesupport (4.0.0) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.0.0) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.0.0) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.0.0) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.0.0) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.0) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:413:in `_run__3438424802447500551__process_action__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.0) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.0) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:655:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.0) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__1421927408692307288__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/wavrin/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/wavrin/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/wavrin/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.5ms)
+
+
+Started GET "/movies/1/reviews/new" for 127.0.0.1 at 2014-01-30 15:16:00 -0600
+Processing by ReviewsController#new as HTML
+  Parameters: {"movie_id"=>"1"}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered reviews/new.html.erb within layouts/application (11.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_sidebar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 23ms (Views: 20.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-30 15:16:00 -0600
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-01-30 15:16:00 -0600
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2014-01-30 15:16:00 -0600
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2014-01-30 15:16:00 -0600
+
+
+Started GET "/assets/buttons.css?body=1" for 127.0.0.1 at 2014-01-30 15:16:00 -0600
+
+
+Started GET "/assets/elements.css?body=1" for 127.0.0.1 at 2014-01-30 15:16:00 -0600
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2014-01-30 15:16:00 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-30 15:16:00 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-30 15:16:00 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-01-30 15:16:00 -0600
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2014-01-30 15:16:00 -0600
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2014-01-30 15:16:00 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-30 15:16:00 -0600
+
+
+Started POST "/movies/1/reviews" for 127.0.0.1 at 2014-01-30 15:16:05 -0600
+Processing by ReviewsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vl6zIWNtIC9kGBZSiGFzFB1y2chPj6OFY4tiQA+Hu2o=", "review"=>{"name"=>"Name"}, "commit"=>"Post Review", "movie_id"=>"1"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mReview Load (1.0ms)[0m  SELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 1]]
+Completed 500 Internal Server Error in 42ms
+
+NoMethodError (undefined method `net' for #<ActiveRecord::Associations::CollectionProxy::ActiveRecord_Associations_CollectionProxy_Review:0x00000102551ad8>):
+  app/controllers/reviews_controller.rb:13:in `create'
+
+
+  Rendered /Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.9ms)
+  Rendered /Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.6ms)
+
+
+Started POST "/movies/1/reviews" for 127.0.0.1 at 2014-01-30 15:16:36 -0600
+Processing by ReviewsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vl6zIWNtIC9kGBZSiGFzFB1y2chPj6OFY4tiQA+Hu2o=", "review"=>{"name"=>"Name"}, "commit"=>"Post Review", "movie_id"=>"1"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mReview Load (0.1ms)[0m  SELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 1]]
+Completed 500 Internal Server Error in 5ms
+
+NoMethodError (undefined method `net' for #<ActiveRecord::Associations::CollectionProxy::ActiveRecord_Associations_CollectionProxy_Review:0x000001015ef360>):
+  app/controllers/reviews_controller.rb:13:in `create'
+
+
+  Rendered /Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.3ms)
+  Rendered /Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.8ms)
+
+
+Started POST "/movies/1/reviews" for 127.0.0.1 at 2014-01-30 15:18:32 -0600
+Processing by ReviewsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vl6zIWNtIC9kGBZSiGFzFB1y2chPj6OFY4tiQA+Hu2o=", "review"=>{"name"=>"Name"}, "commit"=>"Post Review", "movie_id"=>"1"}
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mReview Load (0.2ms)[0m  SELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 1]]
+Completed 500 Internal Server Error in 4ms
+
+NoMethodError (undefined method `net' for #<ActiveRecord::Associations::CollectionProxy::ActiveRecord_Associations_CollectionProxy_Review:0x000001017be0d8>):
+  app/controllers/reviews_controller.rb:13:in `create'
+
+
+  Rendered /Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+  Rendered /Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.8ms)
+
+
+Started GET "/movies/" for 127.0.0.1 at 2014-01-30 15:18:36 -0600
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE (released_on <= '2014-01-30 21:18:36.420123') ORDER BY released_on desc[0m
+  Rendered movies/index.html.erb within layouts/application (6.2ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_sidebar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 18ms (Views: 16.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-30 15:18:36 -0600
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2014-01-30 15:18:36 -0600
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-01-30 15:18:36 -0600
+
+
+Started GET "/assets/elements.css?body=1" for 127.0.0.1 at 2014-01-30 15:18:36 -0600
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2014-01-30 15:18:36 -0600
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2014-01-30 15:18:36 -0600
+
+
+Started GET "/assets/buttons.css?body=1" for 127.0.0.1 at 2014-01-30 15:18:36 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-30 15:18:36 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-30 15:18:36 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-01-30 15:18:36 -0600
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2014-01-30 15:18:36 -0600
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2014-01-30 15:18:36 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-30 15:18:36 -0600
+
+
+Started GET "/assets/ironman.jpg" for 127.0.0.1 at 2014-01-30 15:18:36 -0600
+
+
+Started GET "/assets/catwoman.jpg" for 127.0.0.1 at 2014-01-30 15:18:36 -0600
+
+
+Started GET "/assets/spiderman.jpg" for 127.0.0.1 at 2014-01-30 15:18:36 -0600
+
+
+Started GET "/assets/batman.jpg" for 127.0.0.1 at 2014-01-30 15:18:36 -0600
+
+
+Started GET "/assets/superman.jpg" for 127.0.0.1 at 2014-01-30 15:18:36 -0600
+
+
+Started GET "/movies/1" for 127.0.0.1 at 2014-01-30 15:18:37 -0600
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered movies/show.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 19ms (Views: 16.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/ironman.jpg" for 127.0.0.1 at 2014-01-30 15:18:37 -0600
+
+
+Started GET "/movies/1/reviews/new" for 127.0.0.1 at 2014-01-30 15:18:39 -0600
+Processing by ReviewsController#new as HTML
+  Parameters: {"movie_id"=>"1"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered shared/_errors.html.erb (0.8ms)
+  Rendered reviews/new.html.erb within layouts/application (13.3ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_sidebar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 29ms (Views: 26.1ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/movies/1/reviews" for 127.0.0.1 at 2014-01-30 15:18:49 -0600
+Processing by ReviewsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vl6zIWNtIC9kGBZSiGFzFB1y2chPj6OFY4tiQA+Hu2o=", "review"=>{"name"=>"Larry", "stars"=>"3", "comment"=>"This is what I thinkg"}, "commit"=>"Post Review", "movie_id"=>"1"}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mReview Load (0.2ms)[0m  [1mSELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 1]]
+Completed 500 Internal Server Error in 6ms
+
+NoMethodError (undefined method `net' for #<ActiveRecord::Associations::CollectionProxy::ActiveRecord_Associations_CollectionProxy_Review:0x00000102b1f8e8>):
+  app/controllers/reviews_controller.rb:13:in `create'
+
+
+  Rendered /Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.9ms)
+
+
+Started POST "/movies/1/reviews" for 127.0.0.1 at 2014-01-30 15:19:19 -0600
+Processing by ReviewsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vl6zIWNtIC9kGBZSiGFzFB1y2chPj6OFY4tiQA+Hu2o=", "review"=>{"name"=>"Larry", "stars"=>"2", "comment"=>"dsfd"}, "commit"=>"Post Review", "movie_id"=>"1"}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (4.5ms)[0m  INSERT INTO "reviews" ("comment", "created_at", "movie_id", "name", "stars", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["comment", "dsfd"], ["created_at", Thu, 30 Jan 2014 21:19:19 UTC +00:00], ["movie_id", 1], ["name", "Larry"], ["stars", 2], ["updated_at", Thu, 30 Jan 2014 21:19:19 UTC +00:00]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/movies/1/reviews
+Completed 302 Found in 69ms (ActiveRecord: 6.5ms)
+
+
+Started GET "/movies/1/reviews" for 127.0.0.1 at 2014-01-30 15:19:19 -0600
+Processing by ReviewsController#index as HTML
+  Parameters: {"movie_id"=>"1"}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mReview Load (0.2ms)[0m  [1mSELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 1]]
+  Rendered reviews/index.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_sidebar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 15ms (Views: 12.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-30 15:19:19 -0600
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2014-01-30 15:19:19 -0600
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2014-01-30 15:19:19 -0600
+
+
+Started GET "/assets/buttons.css?body=1" for 127.0.0.1 at 2014-01-30 15:19:19 -0600
+
+
+Started GET "/assets/elements.css?body=1" for 127.0.0.1 at 2014-01-30 15:19:19 -0600
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-01-30 15:19:19 -0600
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2014-01-30 15:19:19 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-30 15:19:19 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-30 15:19:19 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-01-30 15:19:19 -0600
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2014-01-30 15:19:19 -0600
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2014-01-30 15:19:19 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-30 15:19:19 -0600
+
+
+Started GET "/movies/1" for 127.0.0.1 at 2014-01-30 15:19:22 -0600
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered movies/show.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 19ms (Views: 16.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/ironman.jpg" for 127.0.0.1 at 2014-01-30 15:19:22 -0600
+
+
+Started GET "/movies/1/reviews" for 127.0.0.1 at 2014-01-30 15:19:23 -0600
+Processing by ReviewsController#index as HTML
+  Parameters: {"movie_id"=>"1"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mReview Load (0.2ms)[0m  SELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 1]]
+  Rendered reviews/index.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 19ms (Views: 16.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/events/1" for 127.0.0.1 at 2014-02-02 15:00:18 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActionController::RoutingError (No route matches [GET] "/events/1"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/wavrin/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/wavrin/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/wavrin/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.1ms)
+  Rendered /Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.5ms)
+  Rendered /Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (33.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-02 15:00:21 -0600
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies" WHERE (released_on <= '2014-02-02 21:00:21.669865') ORDER BY released_on desc
+  Rendered movies/index.html.erb within layouts/application (75.1ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_sidebar.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 162ms (Views: 135.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2014-02-02 15:00:21 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-02 15:00:21 -0600
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2014-02-02 15:00:21 -0600
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2014-02-02 15:00:21 -0600
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2014-02-02 15:00:21 -0600
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-02-02 15:00:21 -0600
+
+
+Started GET "/assets/elements.css?body=1" for 127.0.0.1 at 2014-02-02 15:00:21 -0600
+
+
+Started GET "/assets/buttons.css?body=1" for 127.0.0.1 at 2014-02-02 15:00:21 -0600
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2014-02-02 15:00:21 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-02 15:00:21 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-02 15:00:21 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-02 15:00:21 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-02 15:00:21 -0600
+
+
+Started GET "/assets/batman-vs-godzilla.jpg" for 127.0.0.1 at 2014-02-02 15:00:21 -0600
+
+
+Started GET "/assets/superman.jpg" for 127.0.0.1 at 2014-02-02 15:00:21 -0600
+
+
+Started GET "/assets/batman.jpg" for 127.0.0.1 at 2014-02-02 15:00:21 -0600
+
+
+Started GET "/assets/catwoman.jpg" for 127.0.0.1 at 2014-02-02 15:00:21 -0600
+
+
+Started GET "/assets/spiderman.jpg" for 127.0.0.1 at 2014-02-02 15:00:21 -0600
+
+
+Started GET "/assets/ironman.jpg" for 127.0.0.1 at 2014-02-02 15:00:21 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-02 15:04:59 -0600
+
+SyntaxError (/Users/wavrin/Code/rails/rails_studio/flix/app/helpers/reviews_helper.rb:7: syntax error, unexpected keyword_end, expecting ')'):
+  app/controllers/application_controller.rb:1:in `<top (required)>'
+  app/controllers/movies_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-02 15:05:23 -0600
+
+SyntaxError (/Users/wavrin/Code/rails/rails_studio/flix/app/helpers/reviews_helper.rb:7: syntax error, unexpected keyword_end, expecting ')'):
+  app/controllers/application_controller.rb:1:in `<top (required)>'
+  app/controllers/movies_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /Users/wavrin/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-02 15:05:58 -0600
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE (released_on <= '2014-02-02 21:05:58.160743') ORDER BY released_on desc[0m
+  Rendered movies/index.html.erb within layouts/application (33.2ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_sidebar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 46ms (Views: 40.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-02 15:05:58 -0600
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2014-02-02 15:05:58 -0600
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-02-02 15:05:58 -0600
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2014-02-02 15:05:58 -0600
+
+
+Started GET "/assets/buttons.css?body=1" for 127.0.0.1 at 2014-02-02 15:05:58 -0600
+
+
+Started GET "/assets/elements.css?body=1" for 127.0.0.1 at 2014-02-02 15:05:58 -0600
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2014-02-02 15:05:58 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-02 15:05:58 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-02 15:05:58 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-02 15:05:58 -0600
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2014-02-02 15:05:58 -0600
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2014-02-02 15:05:58 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-02 15:05:58 -0600
+
+
+Started GET "/assets/batman-vs-godzilla.jpg" for 127.0.0.1 at 2014-02-02 15:05:58 -0600
+
+
+Started GET "/assets/ironman.jpg" for 127.0.0.1 at 2014-02-02 15:05:58 -0600
+
+
+Started GET "/assets/batman.jpg" for 127.0.0.1 at 2014-02-02 15:05:58 -0600
+
+
+Started GET "/assets/spiderman.jpg" for 127.0.0.1 at 2014-02-02 15:05:58 -0600
+
+
+Started GET "/assets/superman.jpg" for 127.0.0.1 at 2014-02-02 15:05:58 -0600
+
+
+Started GET "/assets/catwoman.jpg" for 127.0.0.1 at 2014-02-02 15:05:58 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-02 15:06:17 -0600
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies" WHERE (released_on <= '2014-02-02 21:06:17.479437') ORDER BY released_on desc
+  Rendered movies/index.html.erb within layouts/application (36.1ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_sidebar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 48ms (Views: 43.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-02 15:06:17 -0600
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-02-02 15:06:17 -0600
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2014-02-02 15:06:17 -0600
+
+
+Started GET "/assets/elements.css?body=1" for 127.0.0.1 at 2014-02-02 15:06:17 -0600
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2014-02-02 15:06:17 -0600
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2014-02-02 15:06:17 -0600
+
+
+Started GET "/assets/buttons.css?body=1" for 127.0.0.1 at 2014-02-02 15:06:17 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-02 15:06:17 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-02 15:06:17 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-02 15:06:17 -0600
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2014-02-02 15:06:17 -0600
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2014-02-02 15:06:17 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-02 15:06:17 -0600
+
+
+Started GET "/assets/batman-vs-godzilla.jpg" for 127.0.0.1 at 2014-02-02 15:06:17 -0600
+
+
+Started GET "/assets/ironman.jpg" for 127.0.0.1 at 2014-02-02 15:06:17 -0600
+
+
+Started GET "/assets/spiderman.jpg" for 127.0.0.1 at 2014-02-02 15:06:17 -0600
+
+
+Started GET "/assets/catwoman.jpg" for 127.0.0.1 at 2014-02-02 15:06:17 -0600
+
+
+Started GET "/assets/batman.jpg" for 127.0.0.1 at 2014-02-02 15:06:17 -0600
+
+
+Started GET "/assets/superman.jpg" for 127.0.0.1 at 2014-02-02 15:06:17 -0600
+
+
+Started GET "/movies/6" for 127.0.0.1 at 2014-02-02 15:06:21 -0600
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "6"]]
+  [1m[35m (82.6ms)[0m  SELECT AVG("reviews"."stars") AS avg_id FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 6]]
+  Rendered movies/show.html.erb within layouts/application (110.0ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_sidebar.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 126ms (Views: 39.7ms | ActiveRecord: 83.4ms)
+
+
+Started GET "/assets/batman-vs-godzilla.jpg" for 127.0.0.1 at 2014-02-02 15:06:21 -0600
+
+
+Started GET "/movies/1" for 127.0.0.1 at 2014-02-02 15:06:27 -0600
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (2.4ms)[0m  SELECT AVG("reviews"."stars") AS avg_id FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT AVG("reviews"."stars") AS avg_id FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 1]]
+  Rendered movies/show.html.erb within layouts/application (7.6ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_sidebar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 23ms (Views: 18.1ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/assets/ironman.jpg" for 127.0.0.1 at 2014-02-02 15:06:27 -0600
